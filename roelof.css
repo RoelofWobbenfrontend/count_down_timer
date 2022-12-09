@@ -1,0 +1,61 @@
+:root {
+    --grayish_blue: hsl(237, 18%, 59%); 
+    --soft_red: hsl(345, 95%, 68%); 
+    --white: hsl(0, 0%, 100%); 
+    --dark_desaturated_blue: hsl(236, 21%, 26%); 
+    --very-dark_blue: hsl(235, 16%, 14%); 
+    --very_dark_blue2: hsl(234, 17%, 12%); 
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw; 
+    height: 100vh; 
+    background-color: var(--very_dark_blue2);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+.header{
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.5; 
+    letter-spacing: 8px; 
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;   
+}
+
+.counter{
+    display: flex; 
+    flex-direction: row;
+    gap: 20px; 
+}
+
+.counter_container{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-left: 20px;   
+}
+
+
+
+.top, .bottom{
+    background-color: var(--dark_desaturated_blue);
+    height: 40px;
+    width: 60px;
+    margin-bottom: 2px;   
+}
+
+
+
+
