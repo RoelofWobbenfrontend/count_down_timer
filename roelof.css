@@ -18,16 +18,22 @@ body {
     height: 100vh; 
     background-color: var(--very_dark_blue2);
     display: flex; 
-    align-items: center; 
-    justify-content: center;
     font-family: 'Red Hat Text', sans-serif;
+}
+
+p {
+    font-weight: 700; 
+    letter-spacing: 1.5px;
+    color: var(--grayish_blue); 
+    margin-top: 40px; 
 }
 
 .header{
     color: white;
     text-transform: uppercase;
+    font-size: 22px; 
     line-height: 1.5; 
-    letter-spacing: 8px; 
+    letter-spacing: 3px; 
     margin-bottom: 40px;
     text-align: center;
     font-weight: 700;   
@@ -36,26 +42,81 @@ body {
 .counter{
     display: flex; 
     flex-direction: row;
-    gap: 20px; 
+    gap: 20px;
+    text-align: center;  
 }
 
 .counter_container{
     display: flex; 
     justify-content: center;
     flex-direction: column;
-    padding-right: 20px;
-    padding-left: 20px;   
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 200px;    
 }
 
-
-
-.top, .bottom{
-    background-color: var(--dark_desaturated_blue);
-    height: 40px;
-    width: 60px;
-    margin-bottom: 2px;   
+.flip_card {
+    font-size: 42px; 
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 5px; 
+    position: relative; 
 }
 
+.top, .top-flip {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+    border-bottom: 0.5px solid rgba(0,0,0, 0.7);
+    background-color: rgb(48,50,78); 
+}
 
+.top, .bottom {
+    height: 52px; 
+    width: 60px; 
+    padding: 24px 0px;
+    color: var(--soft_red); 
+    overflow: hidden; 
+    text-align: center; 
+}
 
+.bottom, .bottom-flip {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end; 
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; 
+    background-color: var(--dark_desaturated_blue); 
+}
 
+.title {
+    margin-top: 1.2rem; 
+    font-size: 0.8rem; 
+}
+
+.footer {
+    position: absolute; 
+    bottom: 0;
+    width: 100%;
+}
+
+.footer img{
+    width: 200%;
+    margin-left: -100px; 
+}
+
+.icons {
+   position: absolute; 
+   bottom: 25%; 
+   left: 35%; 
+   display: flex;
+   gap: 30px;  
+}
+
+svg {
+    width:24px; 
+    height: 24px; 
+}
+
+svg:hover{
+    fill: red;  
+}
