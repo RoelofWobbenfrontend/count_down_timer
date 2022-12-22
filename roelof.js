@@ -29,4 +29,8 @@ setInterval( () => {
 
 // animation 
 
-
+//let distance  = christmas - now.value
+//  days.value = Math.floor(distance / (1000 * 60 * 60 * 24))
+//  hours.value = Math.floor(distance % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+//  minutes.value = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+//  seconds.value = Math.floor((distance % (1000 * 60)) / 1000)
