@@ -82,6 +82,7 @@ p {
     color: var(--soft_red);
     overflow: hidden;
     text-align: center;
+    transform-origin: bottom;
 }
 
 .top {
@@ -158,6 +159,16 @@ svg {
 
 svg:hover path {
     fill: var(--soft_red);
+}
+
+.days .front {
+    display: none; 
+}
+
+.animate{
+   transform: rotateX(180deg);
+   transition-duration: 5000ms;
+    
 }
 
 @media screen and (min-width: 1000px) {
