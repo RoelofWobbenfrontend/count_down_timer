@@ -114,7 +114,8 @@ p {
             0 100% /* bottom left */
         );
     border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    transform-origin: top;  
 }
 
 
@@ -161,14 +162,15 @@ svg:hover path {
     fill: var(--soft_red);
 }
 
-.days .front {
-    display: none; 
-}
-
 .animate{
-   transform: rotateX(180deg);
+   transform: rotateX(90deg);
    transition-duration: 5000ms;
     
+}
+
+.animate2 {
+    transform : rotateX(-90deg); 
+    transition-duration: 5000ms;
 }
 
 @media screen and (min-width: 1000px) {

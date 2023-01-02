@@ -1,19 +1,19 @@
-const seconds_top = document.querySelector('.seconds').querySelector('.top');
-const seconds_bottom = document.querySelector('.seconds').querySelector('.bottom')
-
+const second_top = document.querySelector('.seconds').querySelector('.top');
 const minutes = document.querySelector('.minutes');
 const hours = document.querySelector('.hours');
 const days = document.querySelector('.days'); 
 
 const test = document.querySelector('.test');
-console.log(test); 
+
 
 stopDate = new Date("2023-01-21"); 
 
 //  a click event zodat ik de animatie kan testen 
 
 test.addEventListener('click', () => {
-    
+    // find the bottom part 
+    bottom = days.querySelector('.bottom'); 
+    bottom.classList.add('animate2')
 })
 
 
